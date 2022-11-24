@@ -97,7 +97,7 @@ variable "volume_name" {
 variable "volume_size" {
   description = "Size of the volume (GB)"
   type        = number
-  default     = "0.25"
+  default     = 1
 }
 variable "volume_shareable" {
   description = "Is the volume shareable"
