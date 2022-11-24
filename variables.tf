@@ -5,7 +5,7 @@ variable "ibm_cloud_api_key" {
   default     = "<api key>"
 }
 variable "region" {
-  description = "Reigon of Service"
+  description = "Region of Service"
   type        = string
   default     = "us-south"
 }
@@ -34,7 +34,7 @@ variable "instance_name" {
   default     = "tftest-instance"
 }
 variable "memory" {
-  description = "Instance memory"
+  description = "Instance memory (GB)"
   type        = number
   default     = 4
 }
@@ -61,12 +61,12 @@ variable "sys_type" {
 
 // SSH Key
 variable "ssh_key_name" {
-  description = "Name of the ssh key to be used"
+  description = "Name of the SSH key to be used"
   type        = string
   default     = "tftest-key"
 }
 variable "ssh_key_rsa" {
-  description = "Public ssh key"
+  description = "Public SSH key"
   type        = string
   default     = "<rsa value>"
 }
@@ -95,17 +95,17 @@ variable "volume_name" {
   default     = "tftest-volume"
 }
 variable "volume_size" {
-  description = "Size of a volume"
+  description = "Size of the volume (GB)"
   type        = number
   default     = "0.25"
 }
 variable "volume_shareable" {
-  description = "Is a volume shareable"
+  description = "Is the volume shareable"
   type        = bool
   default     = true
 }
 variable "volume_type" {
-  description = "Type of a volume"
+  description = "Type of the volume"
   type        = string
   default     = "tier3"
 }
